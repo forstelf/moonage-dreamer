@@ -8,9 +8,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     
-    height: 600px;
+    height: 500px;
 
-    padding: 10%;
+    padding: 10% 10% 10% 0;
     position: relative;
 }
 
@@ -41,31 +41,31 @@ body {
 
 @keyframes orbiting {
     0% {
-        top: 30%;
+        top: 33%;
         left: 65%;
         z-index: 11;
     }
 
     25% {
-        top: 35%;
+        top: 38%;
         left: 45%;
         z-index: 11;
     }
 
     50% {
-        top: 30%;
+        top: 33%;
         left: 25%;
         z-index: 10;
     }
 
     75%{
-        top: 27%;
+        top: 30%;
         left: 45%;
         z-index: 0;
     }
 
     100% {
-        top: 30%;
+        top: 33%;
         left: 65%;
         z-index: 11;
     }
