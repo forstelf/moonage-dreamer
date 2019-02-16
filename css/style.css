@@ -1,0 +1,72 @@
+body {
+    background-image: url(../img/space.jpg);
+    height: auto;
+    width: auto;
+}
+
+.orbit {
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 600px;
+
+    padding: 10%;
+    position: relative;
+}
+
+.earth {
+    background-image: url(../img/earth.png);
+    background-size: cover;
+
+    height: 400px;
+    width: 400px;
+
+    margin: auto;
+    z-index: 10;
+    position: relative;
+}
+
+.moon {
+    background-image: url(../img/moon.png);
+    background-size: cover;
+
+    height: 150px;
+    width: 150px;
+
+    position: absolute;
+
+    animation: orbiting 10s linear 0s infinite;
+    z-index: 11;
+}
+
+@keyframes orbiting {
+    0% {
+        top: 30%;
+        left: 65%;
+        z-index: 11;
+    }
+
+    25% {
+        top: 35%;
+        left: 45%;
+        z-index: 11;
+    }
+
+    50% {
+        top: 30%;
+        left: 25%;
+        z-index: 10;
+    }
+
+    75%{
+        top: 27%;
+        left: 45%;
+        z-index: 0;
+    }
+
+    100% {
+        top: 30%;
+        left: 65%;
+        z-index: 11;
+    }
+}
